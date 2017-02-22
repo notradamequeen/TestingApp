@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<h1> Airline List </h1>
+		{% if airline_list %}
+		<table>
+			<tr>
+				<th> Airline Name </th>
+			</tr>
+			{% for airline in airline_list %}
+				<tr><td>{{airline.airline_name}}</td></tr>
+			{% endfor %}
+		</table>
+		{% else %}
+			<p>no Airline are available.</p>
+		{% endif %}
+	</body>
+</html>	
